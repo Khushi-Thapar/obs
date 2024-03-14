@@ -7,6 +7,7 @@ import img2 from './css/img2.jpg';
 import img3 from './css/img3.jpg';
 import cust2 from './css/cust2.jpg';
 import Login from './components/Login';
+import Register from './components/Register'
 
 import {
   BrowserRouter as Router,
@@ -26,7 +27,7 @@ function App() {
               <ul class="main-nav">
                 <li> <a href="#">Home</a></li>
                 <li> <Link to="/login">Log in</Link></li>
-                <li> <a href="#">Register</a></li>
+                <li> <Link to="/register">Register</Link></li>
                 <li> <a href="#">Contact Us</a></li>
                 <li> <a href="#">Customer Feedback</a></li>
               </ul>
@@ -118,6 +119,7 @@ function App() {
         </div>
         <Routes>
           <Route path="//login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </Router>
     </div>
